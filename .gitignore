@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+out/
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Minecraft dev environment
+run/
+fabric/run/
+runs/
+
+# Logs and crashes
+*.log
+hs_err_pid*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Personal or secret files
+local.properties

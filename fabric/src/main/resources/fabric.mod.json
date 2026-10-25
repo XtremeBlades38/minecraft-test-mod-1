@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "testmods",
+  "version": "${version}",
+  "name": "TestMod",
+  "description": "This is just a test mod using Architectury for Minecraft, and my very first jump into MC modding",
+  "authors": [
+    "XtremeBlades38"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/testmods/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.testmods.mc.fabric.TestModFabric"
+    ],
+    "client": [
+      "com.testmods.mc.fabric.client.TestModFabricClient"
+    ]
+  },
+  "mixins": [
+    "testmods.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "architectury": ">=9.2.14",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
