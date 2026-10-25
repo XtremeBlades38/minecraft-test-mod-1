@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "testmods:item/muddydirttexture"
+    "all": "testmods:block/muddy_dirt_block"
   }
 }

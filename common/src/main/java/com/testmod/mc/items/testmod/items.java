@@ -19,8 +19,7 @@ import static com.testmod.mc.TestMod.MOD_ID;
         public static final DeferredRegister<Item> ITEMS =
                 DeferredRegister.create(TestMod.MOD_ID, Registries.ITEM);
 
-        public static final RegistrySupplier<Item> MUDDYDIRT = ITEMS.register("muddydirt",
-                () -> new Item(new Item.Properties().arch$tab(CreativeModeTabs.INGREDIENTS)));
+
 
         public static void init() {
             ITEMS.register();

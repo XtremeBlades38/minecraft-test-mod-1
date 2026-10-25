@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "testmods:block/muddy_dirt_block" }
+  }
+}

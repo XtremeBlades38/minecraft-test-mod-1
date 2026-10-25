@@ -29,7 +29,7 @@ public static final DeferredRegister<Item> BLOCK_ITEMS=
         return toReturn;
     }
 
-public static final RegistrySupplier<Block> MUDDY_DIRT_BLOCK=BLOCKS.register("muddy_dirt_block",
+public static final RegistrySupplier<Block> MUDDY_DIRT_BLOCK=registerBlock("muddy_dirt_block",
         ()-> new Block(BlockBehaviour.Properties.of()
         .strength(1.0F)
         .sound(SoundType.SLIME_BLOCK)));
