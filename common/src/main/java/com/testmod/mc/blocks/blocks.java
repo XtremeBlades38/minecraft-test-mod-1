@@ -1,6 +1,7 @@
 package com.testmod.mc.blocks;
 
 import com.testmod.mc.TestMod;
+import com.testmod.mc.tabs.Tabs;
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.registries.Registries;
@@ -25,13 +26,14 @@ public static final DeferredRegister<Item> BLOCK_ITEMS=
     private static RegistrySupplier<Block> registerBlock(String name, Supplier<Block> block) {
         RegistrySupplier<Block> toReturn = BLOCKS.register(name, block);
         BLOCK_ITEMS.register(name, () -> new BlockItem(toReturn.get(),
-                new Item.Properties().arch$tab(CreativeModeTabs.BUILDING_BLOCKS)));
+                new Item.Properties().arch$tab(Tabs.MODTABS)));
         return toReturn;
     }
 
 public static final RegistrySupplier<Block> MUDDY_DIRT_BLOCK=registerBlock("muddy_dirt_block",
         ()-> new Block(BlockBehaviour.Properties.of()
         .strength(1.0F)
+        .requiresCorrectToolForDrops()
         .sound(SoundType.SLIME_BLOCK)));
 
     public static void init() {

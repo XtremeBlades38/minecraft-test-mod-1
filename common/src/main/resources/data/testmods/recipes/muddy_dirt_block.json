@@ -1,0 +1,13 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern":[
+    "MMM",
+    "MDM",
+    "MMM"
+  ],
+  "key":{
+    "M":{"item":"minecraft:mud"},
+    "D":{"item":"minecraft:dirt"}
+  },
+  "result": {"item":"testmods:muddy_dirt_block","count":1}
+}

@@ -1,4 +1,5 @@
 {
 
-  "block.testmods.muddy_dirt_block": "Muddy Dirt Block"
+  "block.testmods.muddy_dirt_block": "Muddy Dirt Block",
+  "itemGroup.testmods.test_tab": "Test mod Blocks"
 }
