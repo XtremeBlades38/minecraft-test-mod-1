@@ -13,6 +13,13 @@
   },
   "license": "CC0-1.0",
   "icon": "assets/testmods/icon.png",
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.github": "https://github.com/XtremeBlades38/minecraft-test-mod-1"
+      }
+    }
+  },
   "environment": "*",
   "entrypoints": {
     "main": [

@@ -33,6 +33,7 @@ subprojects {
             name = 'ParchmentMC'
             url = 'https://maven.parchmentmc.org'
         }
+        maven { url "https://maven.terraformersmc.com/releases/" }
     }
 
     loom {
@@ -45,6 +46,9 @@ subprojects {
             officialMojangMappings()
             parchment("org.parchmentmc.data:parchment-1.20.1:2023.09.03@zip")
         }
+        modImplementation "com.terraformersmc:modmenu:7.2.2"
+
+
 
     }
 
